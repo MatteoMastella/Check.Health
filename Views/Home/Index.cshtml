@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+    <title>Tela de Login</title>
+    <style>
+        body {
+            font-family: Arial, Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+
+        .tela-login {
+            background-color: rgba(0, 0, 0, 0.8);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 60px;
+            border-radius: 15px;
+            color: white;
+        }
+
+        input {
+            padding: 15px;
+            border: none;
+            border-radius: 15px;
+            outline: none;
+            font-size: 15px;
+        }
+
+        button {
+            background-color: #2a9c6f;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .entrar {
+            background-color: #2a9c6f;
+        }
+
+            .entrar:hover {
+                background-color: #12d98a;
+            }
+
+        .cadastro {
+            color: black;
+            background-color: white;
+        }
+
+            .cadastro:hover {
+                color: white;
+                background-color: rgb(0 0 0);
+            }
+    </style>
+</head>
+
+<body>
+    <div class="tela-login">
+        <form action="~/Home/AuthPac" method="post">
+            <h1 style="margin-left:47px">Login</h1>
+            <br />
+            <input type="text" placeholder="E-mail" name="email" />
+            <br />  <br />
+            <input type="password" placeholder="Senha" name="senha" />
+            <br />  <br />
+            <a href="~/Home/Paciente"><button class="entrar" name="tantofaz" value="confirmar">Entrar</button></a>
+            <br />  <br />
+        </form>
+        <a href="~/Home/CadastroPac"><button class="cadastro">Cadastrar</button></a>
+    </div>
+</body>
+

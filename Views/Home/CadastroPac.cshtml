@@ -1,0 +1,93 @@
+﻿@{
+    ViewData["Title"] = "Cadastro Paciente";
+}
+
+<head>
+    <style>
+        body {
+            font-family: Arial, Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+
+        input {
+            padding: 15px;
+            border: none;
+            border-radius: 15px;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .cadastro-paciente {
+            background-color: rgba(0, 0, 0, 0.8);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 385px;
+            border-radius: 15px;
+            color: white;
+        }
+
+        .esquerda {
+            float: left;
+            width: 45%;
+            margin-left: 28px;
+            margin-top: 15px;
+        }
+
+        .direita {
+            float: right;
+            width: 45%;
+            margin-top: 15px;
+        }
+
+        button {
+            background-color: #2a9c6f;
+            border: none;
+            padding: 15px;
+            width: 443px;
+            border-radius: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            margin-top: 22px;
+            margin-left: 30px;
+        }
+
+            button:hover {
+                background-color: #12d98a;
+            }
+    </style>
+</head>
+
+
+<body>
+    <div class="cadastro-paciente">
+        <p></p>
+        <form action="/Home/AuthCadPac" method="post">
+            <h1 style="margin-left:168px; margin-top:10px;">Cadastro</h1>
+            <div class="nome esquerda">
+                <input type="text" placeholder="Nome Completo" name="nome" />
+            </div>
+            <div class="telefone direita">
+                <input type="text" placeholder="Telefone" name="tel" />
+            </div>
+            <div class="email esquerda">
+                <input type="text" placeholder="Digite Seu E-mail" name="email" />
+            </div>
+            <div class="cpf direita">
+                <input type="text" placeholder="Digite seu cpf" name="cpf" />
+            </div>
+            <div class="esquerda">
+                <input type="password" placeholder="Digite sua senha" name="senha" />
+            </div>
+            <div class="direita">
+                <input type="password" placeholder="Confirme sua senha" name="confSenha" />
+            </div>
+            <div>
+                <button type="submit" name="tantofaz" value="confirmar">Confirmar</button>
+            </div>
+        </form>
+    </div>
+</body>

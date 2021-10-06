@@ -1,0 +1,89 @@
+﻿@{
+    ViewData["Title"] = "Agendamentos";
+}
+
+<head>
+    <style>
+        body {
+            font-family: Arial, Arial, Helvetica, sans-serif;
+            background-color: white;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .bloco {
+            float: left;
+            width: 30%;
+            height: 200px;
+            margin-right: 3%;
+            margin-bottom: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+        }
+
+        table {
+            margin-left: 30px;
+            margin-top: 15px;
+        }
+
+        th {
+            color: white;
+            text-align: right;
+        }
+
+        td {
+            color: white;
+            text-align: center;
+        }
+
+        button {
+            background-color: #2a9c6f;
+            border: none;
+            padding: 15px;
+            width: 90%;
+            height: 50px;
+            border-radius: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+
+            button:hover {
+                background-color: #12d98a;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bloco">
+            <table>
+                <tr>
+                    <th>Data:</th>
+                    <td>18/09</td>
+                </tr>
+                <tr>
+                    <th>Hora:</th>
+                    <td>16:00h</td>
+                </tr>
+                <tr>
+                    <th>Doutor(a):</th>
+                    <td>Dr.Josue</td>
+                </tr>
+                <tr>
+                    <th>Consulta:</th>
+                    <td>Eletrocardiograma</td>
+                </tr>
+            </table>
+            <div>
+                <button>Confirmar Consulta</button>
+            </div>
+        </div>
+    </div>
+</body>
